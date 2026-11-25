@@ -1,0 +1,1625 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>京东传媒影业_京东传媒影业视频在线观看_影业品牌原创视频平台</title>
+<meta name="description" content="京东传媒影业官方网站，专注影业品牌原创视频内容生态，提供京东传媒影业视频在线观看、创作者社区、精品内容与行业观察，持续运营值得信赖的影业视频平台。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1626'/%3E%3Cpath d='M24 18l22 14-22 14z' fill='%23ff4d4f'/%3E%3C/svg%3E">
+<style>
+:root{
+  --jdmv-ink:#0f1626;
+  --jdmv-ink-2:#1c2436;
+  --jdmv-paper:#f5f6f8;
+  --jdmv-white:#ffffff;
+  --jdmv-red:#e2382f;
+  --jdmv-red-deep:#b8241d;
+  --jdmv-gold:#e8b04b;
+  --jdmv-line:#dfe3ea;
+  --jdmv-muted:#5d6675;
+  --jdmv-soft:#eef0f4;
+  --jdmv-shadow:0 10px 30px rgba(15,22,38,.08);
+  --jdmv-radius:14px;
+  --jdmv-head-h:64px;
+  --jdmv-bar-h:40px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color:var(--jdmv-ink);
+  background:var(--jdmv-paper);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:800}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+.jdmv-wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 24px}
+.jdmv-anchor{scroll-margin-top:calc(var(--jdmv-head-h) + var(--jdmv-bar-h) + 16px)}
+
+/* ---------- 公告条 + 页头 吸顶 ---------- */
+.jdmv-stick{
+  position:sticky;top:0;z-index:60;
+}
+.jdmv-notice{
+  background:linear-gradient(90deg,var(--jdmv-ink) 0%,var(--jdmv-ink-2) 60%,#2a1d1c 100%);
+  color:#f2f4f8;
+  font-size:13.5px;
+  height:var(--jdmv-bar-h);
+  display:flex;align-items:center;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.jdmv-notice .jdmv-wrap{display:flex;align-items:center;gap:14px;min-width:0}
+.jdmv-notice-tag{
+  flex:none;background:var(--jdmv-red);color:#fff;font-weight:700;
+  font-size:12px;padding:2px 9px;border-radius:4px;letter-spacing:.5px;
+}
+.jdmv-notice-track{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;min-width:0;flex:1}
+.jdmv-notice-track b{color:var(--jdmv-gold);font-weight:700}
+.jdmv-notice-more{flex:none;font-size:12.5px;color:#cfd6e2;border:1px solid rgba(255,255,255,.22);padding:2px 10px;border-radius:99px;transition:.2s}
+.jdmv-notice-more:hover{background:rgba(255,255,255,.12);color:#fff}
+
+.jdmv-header{
+  height:var(--jdmv-head-h);
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--jdmv-line);
+}
+.jdmv-header .jdmv-wrap{display:flex;align-items:center;gap:20px;height:100%}
+.jdmv-brand{display:flex;align-items:center;gap:10px;flex:none}
+.jdmv-brand-mark{
+  width:38px;height:38px;border-radius:10px;background:var(--jdmv-ink);
+  display:grid;place-items:center;flex:none;
+}
+.jdmv-brand-name{font-size:18px;font-weight:900;letter-spacing:.3px;white-space:nowrap}
+.jdmv-brand-name em{font-style:normal;color:var(--jdmv-red)}
+.jdmv-brand-sub{display:block;font-size:11px;color:var(--jdmv-muted);font-weight:500;letter-spacing:1.5px;line-height:1}
+.jdmv-nav{display:flex;align-items:center;gap:4px;margin-left:8px;flex:1;min-width:0}
+.jdmv-nav a{
+  padding:6px 12px;border-radius:8px;font-size:14.5px;color:var(--jdmv-ink-2);font-weight:600;
+  white-space:nowrap;transition:.18s;
+}
+.jdmv-nav a:hover{background:var(--jdmv-soft);color:var(--jdmv-red)}
+.jdmv-search{position:relative;flex:none;width:236px}
+.jdmv-search input{
+  width:100%;height:38px;border-radius:99px;border:1px solid var(--jdmv-line);
+  background:var(--jdmv-soft);padding:0 40px 0 16px;font-size:13.5px;outline:none;transition:.2s;
+}
+.jdmv-search input:focus{background:#fff;border-color:var(--jdmv-red);box-shadow:0 0 0 3px rgba(226,56,47,.1)}
+.jdmv-search-btn{
+  position:absolute;right:5px;top:5px;width:28px;height:28px;border-radius:50%;
+  background:var(--jdmv-ink);display:grid;place-items:center;
+}
+.jdmv-search-tip{
+  position:absolute;left:0;right:0;top:44px;background:#fff;border:1px solid var(--jdmv-line);
+  border-radius:12px;box-shadow:var(--jdmv-shadow);padding:8px;font-size:13px;display:none;
+}
+.jdmv-search-tip.on{display:block}
+.jdmv-search-tip li{padding:7px 10px;border-radius:8px;color:var(--jdmv-ink-2);cursor:pointer}
+.jdmv-search-tip li:hover{background:var(--jdmv-soft);color:var(--jdmv-red)}
+.jdmv-burger{display:none;width:40px;height:40px;border-radius:8px;background:var(--jdmv-soft);align-items:center;justify-content:center;flex:none}
+.jdmv-burger span{display:block;width:18px;height:2px;background:var(--jdmv-ink);position:relative}
+.jdmv-burger span::before,.jdmv-burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--jdmv-ink)}
+.jdmv-burger span::before{top:-6px}
+.jdmv-burger span::after{top:6px}
+
+/* ---------- 首屏 4:6 左文右图 + 数据条 ---------- */
+.jdmv-hero{
+  background:
+    radial-gradient(900px 380px at 88% -10%,rgba(226,56,47,.16),transparent 62%),
+    radial-gradient(700px 320px at 4% 110%,rgba(232,176,75,.14),transparent 60%),
+    var(--jdmv-white);
+  border-bottom:1px solid var(--jdmv-line);
+  padding:52px 0 44px;
+}
+.jdmv-hero-grid{display:grid;grid-template-columns:4fr 6fr;gap:44px;align-items:center}
+.jdmv-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:1.6px;
+  color:var(--jdmv-red);background:rgba(226,56,47,.08);padding:5px 12px;border-radius:99px;
+}
+.jdmv-h1{font-size:44px;letter-spacing:-.5px;margin:16px 0 14px}
+.jdmv-h1 em{font-style:normal;color:var(--jdmv-red)}
+.jdmv-hero-lead{font-size:16px;color:var(--jdmv-muted);max-width:34em}
+.jdmv-hero-lead strong{color:var(--jdmv-ink);font-weight:700}
+.jdmv-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 0}
+.jdmv-btn{
+  display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 22px;border-radius:99px;
+  font-size:14.5px;font-weight:700;transition:.2s;white-space:nowrap;
+}
+.jdmv-btn-primary{background:var(--jdmv-red);color:#fff;box-shadow:0 8px 20px rgba(226,56,47,.28)}
+.jdmv-btn-primary:hover{background:var(--jdmv-red-deep);transform:translateY(-1px)}
+.jdmv-btn-ghost{background:var(--jdmv-soft);color:var(--jdmv-ink)}
+.jdmv-btn-ghost:hover{background:#e2e6ee}
+.jdmv-btn-line{border:1px solid var(--jdmv-line);color:var(--jdmv-ink);background:#fff}
+.jdmv-btn-line:hover{border-color:var(--jdmv-ink)}
+.jdmv-hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:28px;
+  border:1px solid var(--jdmv-line);border-radius:var(--jdmv-radius);overflow:hidden;background:#fff;
+}
+.jdmv-hero-stats div{padding:14px 16px;border-right:1px solid var(--jdmv-line)}
+.jdmv-hero-stats div:last-child{border-right:none}
+.jdmv-stat-num{font-size:26px;font-weight:900;letter-spacing:-.5px;color:var(--jdmv-ink)}
+.jdmv-stat-num span{font-size:14px;color:var(--jdmv-red);margin-left:2px}
+.jdmv-stat-label{font-size:12px;color:var(--jdmv-muted);margin-top:2px;letter-spacing:.5px}
+
+.jdmv-hero-figure{position:relative}
+.jdmv-hero-figure svg{width:100%;height:auto;border-radius:20px;display:block;box-shadow:var(--jdmv-shadow)}
+.jdmv-hero-badge{
+  position:absolute;left:18px;bottom:18px;background:rgba(15,22,38,.86);color:#fff;
+  backdrop-filter:blur(6px);border-radius:12px;padding:10px 14px;font-size:13px;display:flex;align-items:center;gap:10px;
+}
+.jdmv-hero-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--jdmv-red);box-shadow:0 0 0 4px rgba(226,56,47,.28);flex:none}
+.jdmv-hero-badge b{color:var(--jdmv-gold)}
+
+/* ---------- 通用 section ---------- */
+.jdmv-section{padding:56px 0}
+.jdmv-section-alt{background:var(--jdmv-white);border-top:1px solid var(--jdmv-line);border-bottom:1px solid var(--jdmv-line)}
+.jdmv-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:28px;flex-wrap:wrap}
+.jdmv-sec-head-l{min-width:0}
+.jdmv-kicker{font-size:12.5px;font-weight:800;letter-spacing:2px;color:var(--jdmv-red);text-transform:uppercase}
+.jdmv-h2{font-size:30px;letter-spacing:-.4px;margin-top:6px}
+.jdmv-sec-desc{color:var(--jdmv-muted);font-size:14.5px;margin-top:8px;max-width:46em}
+.jdmv-sec-link{font-size:14px;font-weight:700;color:var(--jdmv-ink);border-bottom:2px solid var(--jdmv-red);padding-bottom:2px;white-space:nowrap}
+
+/* ---------- 焦点大图 + 文字列表 ---------- */
+.jdmv-focus{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:26px}
+.jdmv-focus-card{
+  background:#fff;border:1px solid var(--jdmv-line);border-radius:18px;overflow:hidden;
+  box-shadow:var(--jdmv-shadow);display:flex;flex-direction:column;
+}
+.jdmv-focus-card figure{margin:0;position:relative}
+.jdmv-focus-card svg{width:100%;height:auto;display:block}
+.jdmv-play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:62px;height:62px;border-radius:50%;background:rgba(255,255,255,.92);
+  display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.28);transition:.25s;
+}
+.jdmv-focus-card:hover .jdmv-play{transform:translate(-50%,-50%) scale(1.08);background:var(--jdmv-red)}
+.jdmv-focus-card:hover .jdmv-play svg{fill:#fff}
+.jdmv-focus-body{padding:20px 22px 22px}
+.jdmv-tagrow{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.jdmv-tag{font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px;background:var(--jdmv-soft);color:var(--jdmv-ink-2)}
+.jdmv-tag-hot{background:rgba(226,56,47,.1);color:var(--jdmv-red)}
+.jdmv-focus-title{font-size:21px;margin-bottom:8px}
+.jdmv-focus-text{font-size:14px;color:var(--jdmv-muted)}
+.jdmv-focus-meta{display:flex;align-items:center;gap:14px;margin-top:14px;font-size:12.5px;color:var(--jdmv-muted);flex-wrap:wrap}
+.jdmv-focus-meta b{color:var(--jdmv-ink)}
+.jdmv-focus-list{display:flex;flex-direction:column;gap:0;background:#fff;border:1px solid var(--jdmv-line);border-radius:18px;overflow:hidden}
+.jdmv-focus-item{display:flex;gap:16px;padding:16px 18px;border-bottom:1px solid var(--jdmv-line);transition:.2s}
+.jdmv-focus-item:last-child{border-bottom:none}
+.jdmv-focus-item:hover{background:#fafbfd}
+.jdmv-index{font-size:22px;font-weight:900;color:#c9d0dc;line-height:1;flex:none;width:34px;letter-spacing:-1px}
+.jdmv-focus-item-main{min-width:0;flex:1}
+.jdmv-focus-item-title{font-size:15.5px;font-weight:800;margin-bottom:4px}
+.jdmv-focus-item-title:hover{color:var(--jdmv-red)}
+.jdmv-focus-item-desc{font-size:13px;color:var(--jdmv-muted);margin-bottom:8px}
+.jdmv-mini-meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px;color:var(--jdmv-muted)}
+.jdmv-mini-meta b{color:var(--jdmv-ink)}
+
+/* ---------- 视频三列卡片 ---------- */
+.jdmv-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.jdmv-vcard{
+  background:#fff;border:1px solid var(--jdmv-line);border-radius:16px;overflow:hidden;
+  display:flex;flex-direction:column;transition:.22s;
+}
+.jdmv-vcard:hover{transform:translateY(-4px);box-shadow:var(--jdmv-shadow);border-color:#cbd3e0}
+.jdmv-vcard figure{margin:0;position:relative;overflow:hidden}
+.jdmv-vcard svg{width:100%;height:auto;display:block;transition:.4s}
+.jdmv-vcard:hover svg{transform:scale(1.03)}
+.jdmv-vcard .jdmv-dur{
+  position:absolute;right:10px;bottom:10px;background:rgba(15,22,38,.82);color:#fff;
+  font-size:11.5px;padding:2px 8px;border-radius:5px;font-variant-numeric:tabular-nums;
+}
+.jdmv-vcard-body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1;min-width:0}
+.jdmv-vcard-title{font-size:15.5px;font-weight:800;margin:6px 0 6px;line-height:1.45}
+.jdmv-vcard-title:hover{color:var(--jdmv-red)}
+.jdmv-vcard-desc{font-size:13px;color:var(--jdmv-muted);flex:1}
+.jdmv-vcard-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px;padding-top:12px;border-top:1px dashed var(--jdmv-line);flex-wrap:wrap}
+.jdmv-author-mini{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--jdmv-ink-2);font-weight:600;min-width:0}
+.jdmv-ava{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;flex:none;
+  font-size:12px;font-weight:800;color:#fff;letter-spacing:0;
+}
+.jdmv-actions{display:flex;align-items:center;gap:6px}
+.jdmv-act{
+  display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--jdmv-muted);
+  padding:4px 8px;border-radius:7px;transition:.16s;font-variant-numeric:tabular-nums;
+}
+.jdmv-act:hover{background:var(--jdmv-soft);color:var(--jdmv-red)}
+.jdmv-act svg{flex:none}
+.jdmv-act.liked{color:var(--jdmv-red)}
+.jdmv-act.saved{color:var(--jdmv-gold)}
+
+/* ---------- 关键词深度解析 ---------- */
+.jdmv-deep{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:36px;align-items:start}
+.jdmv-deep-main h3{font-size:19px;margin:26px 0 10px;padding-left:12px;border-left:4px solid var(--jdmv-red)}
+.jdmv-deep-main h3:first-of-type{margin-top:4px}
+.jdmv-deep-main p{font-size:15px;color:#3b4454;margin-bottom:12px}
+.jdmv-deep-main p b{color:var(--jdmv-ink)}
+.jdmv-deep-aside{position:sticky;top:calc(var(--jdmv-head-h) + var(--jdmv-bar-h) + 20px);display:flex;flex-direction:column;gap:16px}
+.jdmv-panel{background:#fff;border:1px solid var(--jdmv-line);border-radius:16px;padding:18px 20px}
+.jdmv-panel h4{font-size:14.5px;margin-bottom:12px;letter-spacing:.3px}
+.jdmv-panel-list li{display:flex;justify-content:space-between;gap:12px;font-size:13.5px;padding:7px 0;border-bottom:1px dashed var(--jdmv-line);color:var(--jdmv-muted)}
+.jdmv-panel-list li:last-child{border-bottom:none}
+.jdmv-panel-list b{color:var(--jdmv-ink);font-variant-numeric:tabular-nums}
+.jdmv-quote{background:var(--jdmv-ink);color:#e8ecf3;border-radius:16px;padding:20px 22px}
+.jdmv-quote p{font-size:14px;line-height:1.8}
+.jdmv-quote cite{display:block;margin-top:12px;font-size:12.5px;color:var(--jdmv-gold);font-style:normal;font-weight:700}
+
+/* ---------- 专题 ---------- */
+.jdmv-topics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.jdmv-topic{
+  background:#fff;border:1px solid var(--jdmv-line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;
+}
+.jdmv-topic.feature{grid-row:span 2}
+.jdmv-topic figure{margin:0;position:relative}
+.jdmv-topic svg{width:100%;height:auto;display:block}
+.jdmv-topic-body{padding:18px 20px 20px;flex:1;display:flex;flex-direction:column;min-width:0}
+.jdmv-topic-title{font-size:18px;margin-bottom:6px}
+.jdmv-topic-desc{font-size:13.5px;color:var(--jdmv-muted)}
+.jdmv-status{
+  display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;
+  padding:3px 10px;border-radius:99px;margin-bottom:10px;width:fit-content;
+}
+.jdmv-status-live{background:rgba(226,56,47,.1);color:var(--jdmv-red)}
+.jdmv-status-live i{width:6px;height:6px;border-radius:50%;background:var(--jdmv-red);display:block}
+.jdmv-status-soon{background:var(--jdmv-soft);color:var(--jdmv-muted)}
+.jdmv-topic-list{margin-top:14px;border-top:1px solid var(--jdmv-line);padding-top:12px;display:flex;flex-direction:column;gap:9px}
+.jdmv-topic-list li{display:flex;gap:10px;font-size:13.5px;color:var(--jdmv-ink-2)}
+.jdmv-topic-list li span{color:#b9c1cf;font-weight:800;flex:none}
+
+/* ---------- 作者 双列简介 ---------- */
+.jdmv-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.jdmv-author{
+  background:#fff;border:1px solid var(--jdmv-line);border-radius:16px;padding:20px;
+  display:flex;gap:16px;transition:.2s;
+}
+.jdmv-author:hover{border-color:#c7d0de;box-shadow:var(--jdmv-shadow)}
+.jdmv-author-ava{width:58px;height:58px;border-radius:16px;flex:none;display:grid;place-items:center;font-size:22px;font-weight:900;color:#fff}
+.jdmv-author-main{min-width:0;flex:1}
+.jdmv-author-name{font-size:16.5px;font-weight:900;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.jdmv-badge{font-size:11px;font-weight:800;background:var(--jdmv-gold);color:#3a2b08;padding:1px 7px;border-radius:5px}
+.jdmv-author-field{font-size:12.5px;color:var(--jdmv-red);font-weight:700;margin:3px 0 6px}
+.jdmv-author-bio{font-size:13px;color:var(--jdmv-muted)}
+.jdmv-author-nums{display:flex;gap:16px;margin-top:10px;font-size:12.5px;color:var(--jdmv-muted)}
+.jdmv-author-nums b{color:var(--jdmv-ink);font-variant-numeric:tabular-nums}
+
+/* ---------- 评论 双列 ---------- */
+.jdmv-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.jdmv-comment{background:#fff;border:1px solid var(--jdmv-line);border-radius:14px;padding:18px 20px}
+.jdmv-comment-top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.jdmv-comment-name{font-size:14px;font-weight:800}
+.jdmv-comment-when{font-size:12px;color:var(--jdmv-muted);margin-left:auto;white-space:nowrap}
+.jdmv-comment p{font-size:13.5px;color:#3b4454}
+.jdmv-stars{color:var(--jdmv-gold);font-size:12.5px;letter-spacing:1px;margin-top:8px}
+
+/* ---------- 数据榜单 ---------- */
+.jdmv-board{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.jdmv-board-col{background:#fff;border:1px solid var(--jdmv-line);border-radius:16px;overflow:hidden}
+.jdmv-board-head{padding:14px 18px;border-bottom:1px solid var(--jdmv-line);display:flex;align-items:center;justify-content:space-between;background:linear-gradient(180deg,#fafbfd,#fff)}
+.jdmv-board-head h3{font-size:15px}
+.jdmv-board-head span{font-size:11.5px;color:var(--jdmv-muted);font-weight:700;letter-spacing:1px}
+.jdmv-board-row{display:flex;gap:12px;padding:12px 18px;border-bottom:1px solid #f0f2f6;align-items:center;transition:.16s}
+.jdmv-board-row:last-child{border-bottom:none}
+.jdmv-board-row:hover{background:#fafbfd}
+.jdmv-rank{font-size:15px;font-weight:900;color:#c3cbd8;width:22px;flex:none;font-variant-numeric:tabular-nums}
+.jdmv-rank.top{color:var(--jdmv-red)}
+.jdmv-board-name{font-size:13.5px;font-weight:700;min-width:0;flex:1}
+.jdmv-board-val{font-size:12px;color:var(--jdmv-muted);font-variant-numeric:tabular-nums;flex:none}
+
+/* ---------- 品牌故事时间线 ---------- */
+.jdmv-time{position:relative;padding-left:30px;display:flex;flex-direction:column;gap:26px}
+.jdmv-time::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--jdmv-red),var(--jdmv-line))}
+.jdmv-time-item{position:relative}
+.jdmv-time-item::before{
+  content:"";position:absolute;left:-28px;top:6px;width:12px;height:12px;border-radius:50%;
+  background:#fff;border:3px solid var(--jdmv-red);
+}
+.jdmv-time-year{font-size:12.5px;font-weight:900;color:var(--jdmv-red);letter-spacing:1.5px}
+.jdmv-time-title{font-size:16.5px;margin:4px 0 6px}
+.jdmv-time-text{font-size:14px;color:var(--jdmv-muted)}
+
+/* ---------- FAQ ---------- */
+.jdmv-faq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.jdmv-faq details{background:#fff;border:1px solid var(--jdmv-line);border-radius:12px;padding:0 18px;transition:.2s}
+.jdmv-faq details[open]{border-color:#c7d0de;box-shadow:var(--jdmv-shadow)}
+.jdmv-faq summary{
+  list-style:none;cursor:pointer;padding:15px 0;font-size:14.5px;font-weight:800;display:flex;align-items:center;gap:12px;
+}
+.jdmv-faq summary::-webkit-details-marker{display:none}
+.jdmv-faq summary::after{
+  content:"+";margin-left:auto;font-size:18px;color:var(--jdmv-red);font-weight:800;line-height:1;flex:none;
+}
+.jdmv-faq details[open] summary::after{content:"−"}
+.jdmv-faq p{font-size:13.5px;color:var(--jdmv-muted);padding:0 0 16px}
+
+/* ---------- 企业动态 + 合作 ---------- */
+.jdmv-news-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px;align-items:start}
+.jdmv-news{display:flex;flex-direction:column;gap:12px}
+.jdmv-news-item{display:flex;gap:16px;background:#fff;border:1px solid var(--jdmv-line);border-radius:12px;padding:14px 18px;transition:.2s}
+.jdmv-news-item:hover{border-color:#c7d0de;transform:translateX(3px)}
+.jdmv-news-date{flex:none;width:64px;text-align:center;border-right:1px solid var(--jdmv-line);padding-right:12px}
+.jdmv-news-date b{display:block;font-size:18px;font-weight:900;line-height:1.2}
+.jdmv-news-date span{font-size:11px;color:var(--jdmv-muted);letter-spacing:.5px}
+.jdmv-news-main{min-width:0}
+.jdmv-news-title{font-size:14.5px;font-weight:800}
+.jdmv-news-desc{font-size:12.5px;color:var(--jdmv-muted);margin-top:3px}
+.jdmv-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.jdmv-partner{
+  background:#fff;border:1px solid var(--jdmv-line);border-radius:12px;padding:16px;display:flex;align-items:center;gap:12px;
+}
+.jdmv-partner-ico{width:36px;height:36px;border-radius:10px;flex:none;display:grid;place-items:center;font-size:14px;font-weight:900;color:#fff}
+.jdmv-partner b{font-size:13.5px;display:block}
+.jdmv-partner span{font-size:11.5px;color:var(--jdmv-muted)}
+
+/* ---------- 投稿 CTA ---------- */
+.jdmv-cta{
+  background:linear-gradient(120deg,var(--jdmv-ink) 0%,#242a3c 55%,#2e1f1e 100%);
+  color:#eef1f7;border-radius:22px;padding:38px 40px;display:flex;align-items:center;gap:32px;flex-wrap:wrap;
+}
+.jdmv-cta-main{flex:1;min-width:260px}
+.jdmv-cta h2{font-size:26px;color:#fff;letter-spacing:-.3px}
+.jdmv-cta p{font-size:14px;color:#b9c2d1;margin-top:8px;max-width:40em}
+.jdmv-cta-actions{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ---------- 页脚 ---------- */
+.jdmv-footer{background:var(--jdmv-ink);color:#a9b3c4;padding:52px 0 26px;font-size:13.5px}
+.jdmv-footer-grid{display:grid;grid-template-columns:1.5fr repeat(3,minmax(0,1fr));gap:32px}
+.jdmv-footer .jdmv-brand-name{color:#fff}
+.jdmv-footer .jdmv-brand-sub{color:#7c879b}
+.jdmv-footer-about{font-size:13px;line-height:1.85;margin-top:14px;max-width:30em}
+.jdmv-footer h4{font-size:13.5px;color:#fff;margin-bottom:14px;letter-spacing:.6px}
+.jdmv-footer li{margin-bottom:9px}
+.jdmv-footer li a:hover{color:#fff}
+.jdmv-footer-bottom{
+  margin-top:34px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:#7c879b;
+}
+
+/* ---------- Toast / Modal / 回顶 ---------- */
+.jdmv-toast{
+  position:fixed;left:50%;bottom:36px;transform:translate(-50%,20px);
+  background:rgba(15,22,38,.94);color:#fff;padding:11px 22px;border-radius:99px;font-size:13.5px;
+  opacity:0;pointer-events:none;transition:.28s;z-index:200;box-shadow:0 10px 30px rgba(0,0,0,.24);white-space:nowrap;
+}
+.jdmv-toast.on{opacity:1;transform:translate(-50%,0)}
+.jdmv-modal-mask{
+  position:fixed;inset:0;background:rgba(10,14,22,.55);backdrop-filter:blur(3px);
+  display:none;align-items:center;justify-content:center;padding:20px;z-index:150;
+}
+.jdmv-modal-mask.on{display:flex}
+.jdmv-modal{
+  background:#fff;border-radius:18px;width:100%;max-width:460px;padding:26px 26px 22px;
+  box-shadow:0 24px 60px rgba(0,0,0,.3);animation:jdmvPop .22s ease;
+}
+@keyframes jdmvPop{from{transform:translateY(12px) scale(.98);opacity:0}to{transform:none;opacity:1}}
+.jdmv-modal h3{font-size:18px;margin-bottom:6px}
+.jdmv-modal p{font-size:13.5px;color:var(--jdmv-muted);margin-bottom:16px}
+.jdmv-modal input,.jdmv-modal textarea{
+  width:100%;border:1px solid var(--jdmv-line);border-radius:10px;padding:11px 14px;font-size:13.5px;
+  font-family:inherit;outline:none;margin-bottom:12px;resize:vertical;background:var(--jdmv-soft);
+}
+.jdmv-modal input:focus,.jdmv-modal textarea:focus{background:#fff;border-color:var(--jdmv-red)}
+.jdmv-modal-foot{display:flex;gap:10px;justify-content:flex-end;margin-top:4px}
+.jdmv-modal-close{position:absolute;top:14px;right:16px;font-size:20px;color:var(--jdmv-muted)}
+.jdmv-modal-wrap{position:relative}
+.jdmv-totop{
+  position:fixed;right:24px;bottom:28px;width:46px;height:46px;border-radius:50%;
+  background:var(--jdmv-ink);color:#fff;display:grid;place-items:center;z-index:90;
+  opacity:0;pointer-events:none;transform:translateY(10px);transition:.26s;box-shadow:var(--jdmv-shadow);
+}
+.jdmv-totop.on{opacity:1;pointer-events:auto;transform:none}
+.jdmv-totop:hover{background:var(--jdmv-red)}
+
+/* ---------- 响应式 ---------- */
+@media(max-width:980px){
+  .jdmv-hero-grid{grid-template-columns:1fr;gap:30px}
+  .jdmv-h1{font-size:35px}
+  .jdmv-deep{grid-template-columns:1fr}
+  .jdmv-deep-aside{position:static;flex-direction:row;flex-wrap:wrap}
+  .jdmv-panel,.jdmv-quote{flex:1 1 260px}
+  .jdmv-video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .jdmv-board{grid-template-columns:1fr}
+  .jdmv-news-grid{grid-template-columns:1fr}
+  .jdmv-footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:820px){
+  :root{--jdmv-head-h:58px}
+  .jdmv-nav{
+    position:fixed;left:0;right:0;top:calc(var(--jdmv-head-h) + var(--jdmv-bar-h));
+    background:#fff;border-bottom:1px solid var(--jdmv-line);flex-direction:column;align-items:stretch;
+    padding:10px 16px;gap:2px;display:none;box-shadow:0 18px 30px rgba(15,22,38,.12);max-height:70vh;overflow:auto;
+  }
+  .jdmv-nav.on{display:flex}
+  .jdmv-nav a{padding:11px 8px;font-size:15px;border-radius:8px}
+  .jdmv-burger{display:flex}
+  .jdmv-search{width:auto;flex:1;min-width:0}
+  .jdmv-header .jdmv-wrap{gap:12px}
+  .jdmv-brand-sub{display:none}
+  .jdmv-focus{grid-template-columns:1fr}
+  .jdmv-topics{grid-template-columns:1fr}
+  .jdmv-topic.feature{grid-row:auto}
+  .jdmv-authors,.jdmv-comments,.jdmv-faq{grid-template-columns:1fr}
+  .jdmv-video-grid{grid-template-columns:1fr}
+  .jdmv-section{padding:40px 0}
+  .jdmv-h2{font-size:24px}
+  .jdmv-cta{padding:28px 24px}
+  .jdmv-hero-stats{grid-template-columns:1fr}
+  .jdmv-hero-stats div{border-right:none;border-bottom:1px solid var(--jdmv-line)}
+  .jdmv-hero-stats div:last-child{border-bottom:none}
+  .jdmv-footer-grid{grid-template-columns:1fr}
+  .jdmv-partners{grid-template-columns:1fr}
+  .jdmv-notice-more{display:none}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头 -->
+<div class="jdmv-stick">
+  <div class="jdmv-notice">
+    <div class="jdmv-wrap">
+      <span class="jdmv-notice-tag">官方发布</span>
+      <div class="jdmv-notice-track">
+        11月22日更新：纪录片专题《光影里的四十七天》上线第3集 · 新增「新锐创作者扶持计划」第二批申报通道 · 影业品牌原创片单《长夜有灯》开放高清预约
+      </div>
+      <a class="jdmv-notice-more" href="#jdmv-news">全部动态</a>
+    </div>
+  </div>
+
+  <header class="jdmv-header">
+    <div class="jdmv-wrap">
+      <a class="jdmv-brand" href="#jdmv-top" aria-label="京东传媒影业官网首页">
+        <span class="jdmv-brand-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 5l12 7-12 7V5z" fill="#ff4d4f"/></svg>
+        </span>
+        <span>
+          <span class="jdmv-brand-name">京东传媒<em>影业</em></span>
+          <span class="jdmv-brand-sub">JDMV · 官方视频门户</span>
+        </span>
+      </a>
+
+      <nav class="jdmv-nav" id="jdmvNav" aria-label="主导航">
+        <a href="#jdmv-focus">焦点内容</a>
+        <a href="#jdmv-videos">视频专区</a>
+        <a href="#jdmv-about">品牌解析</a>
+        <a href="#jdmv-topics">专题企划</a>
+        <a href="#jdmv-creators">创作者</a>
+        <a href="#jdmv-board">榜单</a>
+        <a href="#jdmv-news">企业动态</a>
+        <a href="#jdmv-faq">常见问题</a>
+      </nav>
+
+      <div class="jdmv-search">
+        <input id="jdmvSearchInput" type="search" placeholder="搜索片单 / 专题 / 创作者" aria-label="站内搜索">
+        <button class="jdmv-search-btn" id="jdmvSearchBtn" aria-label="搜索">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#fff" stroke-width="2.4"/><path d="M16.5 16.5L21 21" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
+        </button>
+        <ul class="jdmv-search-tip" id="jdmvSearchTip" aria-live="polite"></ul>
+      </div>
+
+      <button class="jdmv-burger" id="jdmvBurger" aria-label="展开导航" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+</div>
+
+<main id="jdmv-top">
+
+  <!-- S2 品牌首屏 4:6 -->
+  <section class="jdmv-hero">
+    <div class="jdmv-wrap jdmv-hero-grid">
+      <div>
+        <span class="jdmv-eyebrow">官方网站 · 企业级影业品牌</span>
+        <h1 class="jdmv-h1">京东传媒影业<em>视频在线观看</em></h1>
+        <p class="jdmv-hero-lead">
+          作为国内领先的影业品牌视频平台，京东传媒影业官方网站为创作者与企业搭建高品质内容生态：
+          <strong>原创、正版、高清</strong>的剧情短片、纪录片、行业观察与人物访谈在这里同步更新，
+          让每一次在线观看都成为值得信赖的陪伴。
+        </p>
+        <div class="jdmv-hero-actions">
+          <a class="jdmv-btn jdmv-btn-primary" href="#jdmv-videos">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M7 5l12 7-12 7V5z"/></svg>
+            立即观看
+          </a>
+          <a class="jdmv-btn jdmv-btn-ghost" href="#jdmv-creators">认识创作者</a>
+          <button class="jdmv-btn jdmv-btn-line" id="jdmvOpenSubmit">投稿入口</button>
+        </div>
+        <div class="jdmv-hero-stats">
+          <div>
+            <div class="jdmv-stat-num" data-count="1286">0<span>+</span></div>
+            <div class="jdmv-stat-label">正版高清片单</div>
+          </div>
+          <div>
+            <div class="jdmv-stat-num" data-count="326">0<span>位</span></div>
+            <div class="jdmv-stat-label">签约创作者</div>
+          </div>
+          <div>
+            <div class="jdmv-stat-num" data-count="9400">0<span>万</span></div>
+            <div class="jdmv-stat-label">月度观看人次</div>
+          </div>
+        </div>
+      </div>
+
+      <figure class="jdmv-hero-figure">
+        <svg viewBox="0 0 640 460" role="img" aria-label="京东传媒影业官网首屏主视觉：夜色影厅银幕与摄影机光束">
+          <defs>
+            <linearGradient id="jdmvHeroSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#131b2c"/><stop offset="1" stop-color="#241a1c"/>
+            </linearGradient>
+            <linearGradient id="jdmvHeroBeam" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#ff4d4f" stop-opacity=".55"/><stop offset="1" stop-color="#ff4d4f" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="jdmvHeroScreen" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f4f6fa"/><stop offset="1" stop-color="#c9d2e2"/>
+            </linearGradient>
+          </defs>
+          <rect width="640" height="460" rx="20" fill="url(#jdmvHeroSky)"/>
+          <circle cx="512" cy="86" r="52" fill="#e8b04b" opacity=".18"/>
+          <circle cx="512" cy="86" r="24" fill="#e8b04b" opacity=".42"/>
+          <rect x="74" y="104" width="368" height="212" rx="8" fill="url(#jdmvHeroScreen)"/>
+          <rect x="88" y="118" width="340" height="184" rx="4" fill="#1a2133"/>
+          <path d="M198 176l88 43-88 43z" fill="#ff4d4f"/>
+          <g opacity=".5">
+            <rect x="96" y="126" width="60" height="6" rx="3" fill="#8d99b0"/>
+            <rect x="96" y="140" width="38" height="6" rx="3" fill="#5c677d"/>
+          </g>
+          <path d="M456 214l104 34-104 34z" fill="url(#jdmvHeroBeam)"/>
+          <g stroke="#eef1f7" stroke-opacity=".22" stroke-width="1">
+            <path d="M0 356h640"/><path d="M0 396h640"/>
+          </g>
+          <g>
+            <rect x="64" y="336" width="130" height="9" rx="4" fill="#3c465c"/>
+            <rect x="88" y="322" width="82" height="14" rx="4" fill="#525f7a"/>
+          </g>
+          <g>
+            <rect x="446" y="312" width="14" height="42" rx="3" fill="#8d99b0"/>
+            <circle cx="453" cy="306" r="13" fill="#5c677d"/>
+            <rect x="466" y="296" width="34" height="14" rx="3" fill="#ff4d4f"/>
+          </g>
+          <text x="74" y="434" fill="#7d8aa3" font-family="sans-serif" font-size="13" letter-spacing="3">JDMV ORIGINAL · 2026</text>
+        </svg>
+        <div class="jdmv-hero-badge"><span class="dot"></span>正在热映 · <b>《长夜有灯》</b> 第 1 集</div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- S3 焦点内容 -->
+  <section class="jdmv-section jdmv-anchor" id="jdmv-focus">
+    <div class="jdmv-wrap">
+      <div class="jdmv-sec-head">
+        <div class="jdmv-sec-head-l">
+          <div class="jdmv-kicker">Focus · 本期焦点</div>
+          <h2 class="jdmv-h2">京东传媒影业官网焦点片单</h2>
+          <p class="jdmv-sec-desc">由官方编辑部与创作者共同挑选，本周京东传媒影业视频在线观看的四个入口，覆盖剧情、纪录、行业与访谈。</p>
+        </div>
+        <a class="jdmv-sec-link" href="#jdmv-videos">更多精品内容</a>
+      </div>
+
+      <div class="jdmv-focus">
+        <article class="jdmv-focus-card">
+          <figure>
+            <svg viewBox="0 0 720 405" role="img" aria-label="焦点影片长夜有灯剧照：雨夜街灯下的独行者">
+              <defs>
+                <linearGradient id="jdmvF1a" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#101828"/><stop offset="1" stop-color="#1f2a3f"/>
+                </linearGradient>
+                <radialGradient id="jdmvF1b" cx=".5" cy=".5" r=".5">
+                  <stop offset="0" stop-color="#ffd98a" stop-opacity=".9"/><stop offset="1" stop-color="#ffd98a" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect width="720" height="405" fill="url(#jdmvF1a)"/>
+              <circle cx="540" cy="118" r="120" fill="url(#jdmvF1b)"/>
+              <path d="M540 60v120" stroke="#8d99b0" stroke-width="4"/>
+              <circle cx="540" cy="132" r="16" fill="#ffd98a"/>
+              <g stroke="#43506b" stroke-width="2" opacity=".8">
+                <path d="M0 330L720 300"/><path d="M0 366L720 340"/>
+              </g>
+              <path d="M330 300l14-92h30l16 92z" fill="#0b111d"/>
+              <circle cx="357" cy="196" r="17" fill="#0b111d"/>
+              <ellipse cx="357" cy="318" rx="70" ry="10" fill="#0b111d" opacity=".5"/>
+              <g stroke="#ff4d4f" stroke-width="2" opacity=".7">
+                <path d="M120 250l14 40-14 40"/><path d="M600 240l-12 38 12 38"/>
+              </g>
+              <text x="40" y="372" fill="#93a0b8" font-family="sans-serif" font-size="12" letter-spacing="4">EPISODE 01 · RAIN NIGHT</text>
+            </svg>
+            <span class="jdmv-play" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#0f1626"><path d="M8 5l12 7-12 7V5z"/></svg>
+            </span>
+          </figure>
+          <div class="jdmv-focus-body">
+            <div class="jdmv-tagrow">
+              <span class="jdmv-tag jdmv-tag-hot">官方重点</span>
+              <span class="jdmv-tag">剧情短片</span>
+              <span class="jdmv-tag">正版高清</span>
+            </div>
+            <h3 class="jdmv-focus-title"><a href="#jdmv-videos">《长夜有灯》第1集：城市凌晨四点的守夜人</a></h3>
+            <p class="jdmv-focus-text">一场持续四十七天的拍摄，把镜头对准凌晨仍在工作的夜班人群。京东传媒影业原创出品，用克制的光与影讲述真实生活的重量。</p>
+            <div class="jdmv-focus-meta">
+              <span>导演 <b>沈屿</b></span>
+              <span>播放 <b>216.4万</b></span>
+              <span>点赞 <b>8.6万</b></span>
+              <span>收藏 <b>3.1万</b></span>
+            </div>
+          </div>
+        </article>
+
+        <ul class="jdmv-focus-list">
+          <li class="jdmv-focus-item">
+            <span class="jdmv-index">02</span>
+            <div class="jdmv-focus-item-main">
+              <h3 class="jdmv-focus-item-title"><a href="#jdmv-videos">《四十七天》幕后纪录：一场长镜头拍了十九条</a></h3>
+              <p class="jdmv-focus-item-desc">从勘景到杀青，剧组在旧厂房里连续作业十三天，创作幕后细节首次公开。</p>
+              <div class="jdmv-mini-meta"><span>作者 <b>摄制组手记</b></span><span>播放 <b>84.2万</b></span><span>标签 <b>创作幕后</b></span></div>
+            </div>
+          </li>
+          <li class="jdmv-focus-item">
+            <span class="jdmv-index">03</span>
+            <div class="jdmv-focus-item-main">
+              <h3 class="jdmv-focus-item-title"><a href="#jdmv-videos">行业观察：影业品牌为什么开始自己做内容</a></h3>
+              <p class="jdmv-focus-item-desc">用三组数据拆解品牌内容生态的转变，讲清楚创作者、平台与观众之间的新关系。</p>
+              <div class="jdmv-mini-meta"><span>作者 <b>林砚</b></span><span>播放 <b>61.7万</b></span><span>标签 <b>行业观察</b></span></div>
+            </div>
+          </li>
+          <li class="jdmv-focus-item">
+            <span class="jdmv-index">04</span>
+            <div class="jdmv-focus-item-main">
+              <h3 class="jdmv-focus-item-title"><a href="#jdmv-videos">人物访谈：剪辑师周荞的十二年与三百段废片</a></h3>
+              <p class="jdmv-focus-item-desc">从广告剪到长片，她讲了一个剪辑台前的故事，也讲了如何在废片里找到自己的节奏。</p>
+              <div class="jdmv-mini-meta"><span>作者 <b>周荞</b></span><span>播放 <b>52.9万</b></span><span>标签 <b>人物访谈</b></span></div>
+            </div>
+          </li>
+          <li class="jdmv-focus-item">
+            <span class="jdmv-index">05</span>
+            <div class="jdmv-focus-item-main">
+              <h3 class="jdmv-focus-item-title"><a href="#jdmv-videos">实用技巧：手机也能拍出电影感的六种布光</a></h3>
+              <p class="jdmv-focus-item-desc">不需要昂贵设备，一盏台灯、一块反光板，就能在家完成三种基础情绪光。</p>
+              <div class="jdmv-mini-meta"><span>作者 <b>阿灯</b></span><span>播放 <b>47.3万</b></span><span>标签 <b>教程干货</b></span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 视频专区（三列等高卡片） -->
+  <section class="jdmv-section jdmv-section-alt jdmv-anchor" id="jdmv-videos">
+    <div class="jdmv-wrap">
+      <div class="jdmv-sec-head">
+        <div class="jdmv-sec-head-l">
+          <div class="jdmv-kicker">Videos · 视频专区</div>
+          <h2 class="jdmv-h2">京东传媒影业视频在线观看专区</h2>
+          <p class="jdmv-sec-desc">正版高清片单持续上新。点击卡片上的点赞、收藏可即时记录你的观看偏好，官方每周更新精品内容。</p>
+        </div>
+        <a class="jdmv-sec-link" href="#jdmv-news">更新日志</a>
+      </div>
+
+      <div class="jdmv-video-grid">
+        <article class="jdmv-vcard">
+          <figure>
+            <svg viewBox="0 0 480 270" role="img" aria-label="纪录片四十七天片场的主摄影机与灯架">
+              <defs><linearGradient id="jdmvV1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c2436"/><stop offset="1" stop-color="#3a2a25"/></linearGradient></defs>
+              <rect width="480" height="270" fill="url(#jdmvV1)"/>
+              <circle cx="380" cy="60" r="46" fill="#e8b04b" opacity=".22"/>
+              <rect x="70" y="150" width="150" height="16" rx="4" fill="#5c677d"/>
+              <rect x="126" y="112" width="66" height="40" rx="6" fill="#8d99b0"/>
+              <circle cx="159" cy="132" r="13" fill="#0f1626"/>
+              <circle cx="159" cy="132" r="6" fill="#ff4d4f"/>
+              <path d="M192 112v40" stroke="#8d99b0" stroke-width="4"/>
+              <rect x="196" y="98" width="52" height="60" rx="4" fill="#c9d2e2" opacity=".65"/>
+              <g stroke="#e8b04b" stroke-width="3" opacity=".7"><path d="M300 210v-70"/><path d="M286 148l14-18 14 18"/><circle cx="300" cy="130" r="8"/></g>
+              <g stroke="#43506b" stroke-width="2"><path d="M0 226h480"/><path d="M0 250h480"/></g>
+              <text x="28" y="42" fill="#a8b3c7" font-family="sans-serif" font-size="12" letter-spacing="3">BEHIND THE SCENE</text>
+            </svg>
+            <span class="jdmv-dur">18:42</span>
+          </figure>
+          <div class="jdmv-vcard-body">
+            <div class="jdmv-tagrow"><span class="jdmv-tag jdmv-tag-hot">本周上新</span><span class="jdmv-tag">创作幕后</span></div>
+            <h3 class="jdmv-vcard-title"><a href="#jdmv-focus">《四十七天》拍摄手记：旧厂房里的十三天</a></h3>
+            <p class="jdmv-vcard-desc">从勘景图到今天的分镜表，剧组把一条长镜头拆成十九次尝试，所有失败样本都在片尾保留。</p>
+            <div class="jdmv-vcard-foot">
+              <div class="jdmv-author-mini"><span class="jdmv-ava" style="background:#e2382f">摄</span>摄制组手记</div>
+              <div class="jdmv-actions">
+                <button class="jdmv-act" data-like aria-label="点赞"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.6-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.4-7 10-7 10z" stroke="currentColor" stroke-width="2"/></svg><span>1.2万</span></button>
+                <button class="jdmv-act" data-save aria-label="收藏"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M6 4h12v16l-6-4-6 4V4z" stroke="currentColor" stroke-width="2"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="jdmv-vcard">
+          <figure>
+            <svg viewBox="0 0 480 270" role="img" aria-label="城市探索影像中黄昏天台与远处楼群">
+              <defs><linearGradient id="jdmvV2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b3550"/><stop offset=".6" stop-color="#6b5a7a"/><stop offset="1" stop-color="#d98a63"/></linearGradient></defs>
+              <rect width="480" height="270" fill="url(#jdmvV2)"/>
+              <circle cx="140" cy="150" r="34" fill="#ffd98a" opacity=".8"/>
+              <g fill="#232a3c">
+                <rect x="40" y="170" width="46" height="100"/><rect x="94" y="140" width="34" height="130"/>
+                <rect x="186" y="158" width="52" height="112"/><rect x="246" y="186" width="30" height="84"/>
+                <rect x="286" y="148" width="60" height="122"/><rect x="356" y="176" width="42" height="94"/>
+                <rect x="408" y="196" width="40" height="74"/>
+              </g>
+              <g fill="#ffd98a" opacity=".7">
+                <rect x="102" y="156" width="6" height="8"/><rect x="114" y="172" width="6" height="8"/>
+                <rect x="298" y="168" width="6" height="8"/><rect x="316" y="190" width="6" height="8"/>
+                <rect x="366" y="192" width="6" height="8"/>
+              </g>
+              <text x="28" y="42" fill="#f4e5cf" font-family="sans-serif" font-size="12" letter-spacing="3">CITY WALK</text>
+            </svg>
+            <span class="jdmv-dur">12:05</span>
+          </figure>
+          <div class="jdmv-vcard-body">
+            <div class="jdmv-tagrow"><span class="jdmv-tag">城市探索</span><span class="jdmv-tag">在地文化</span></div>
+            <h3 class="jdmv-vcard-title"><a href="#jdmv-focus">黄昏天台地图：我们走完了老城的六座屋顶</a></h3>
+            <p class="jdmv-vcard-desc">跟着在地向导穿过三条巷子，记录拆迁前的最后一批天台，以及住在楼顶的人。</p>
+            <div class="jdmv-vcard-foot">
+              <div class="jdmv-author-mini"><span class="jdmv-ava" style="background:#5a6b8c">陆</span>陆行笔记</div>
+              <div class="jdmv-actions">
+                <button class="jdmv-act" data-like aria-label="点赞"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.6-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.4-7 10-7 10z" stroke="currentColor" stroke-width="2"/></svg><span>8642</span></button>
+                <button class="jdmv-act" data-save aria-label="收藏"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M6 4h12v16l-6-4-6 4V4z" stroke="currentColor" stroke-width="2"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="jdmv-vcard">
+          <figure>
+            <svg viewBox="0 0 480 270" role="img" aria-label="访谈节目录制现场两把椅子与暖色背景墙">
+              <rect width="480" height="270" fill="#f0e6db"/>
+              <circle cx="240" cy="110" r="86" fill="#e8b04b" opacity=".25"/>
+              <g fill="#2b3346">
+                <rect x="118" y="146" width="88" height="58" rx="10"/>
+                <rect x="274" y="146" width="88" height="58" rx="10"/>
+                <rect x="126" y="204" width="10" height="40"/><rect x="188" y="204" width="10" height="40"/>
+                <rect x="282" y="204" width="10" height="40"/><rect x="344" y="204" width="10" height="40"/>
+                <circle cx="162" cy="118" r="18"/><circle cx="318" cy="118" r="18"/>
+              </g>
+              <g stroke="#c7b8a4" stroke-width="2"><path d="M0 254h480"/></g>
+              <circle cx="404" cy="56" r="20" fill="#ff4d4f" opacity=".7"/>
+              <text x="28" y="42" fill="#7a6a58" font-family="sans-serif" font-size="12" letter-spacing="3">STUDIO TALK</text>
+            </svg>
+            <span class="jdmv-dur">24:16</span>
+          </figure>
+          <div class="jdmv-vcard-body">
+            <div class="jdmv-tagrow"><span class="jdmv-tag">人物访谈</span><span class="jdmv-tag">深度</span></div>
+            <h3 class="jdmv-vcard-title"><a href="#jdmv-focus">和周荞聊剪辑：把三百段废片拼成一部片</a></h3>
+            <p class="jdmv-vcard-desc">一镜到底并不难，难的是让观众相信。十二年剪辑生涯里，她最珍惜的是被删掉的那部分。</p>
+            <div class="jdmv-vcard-foot">
+              <div class="jdmv-author-mini"><span class="jdmv-ava" style="background:#8c6a3f">周</span>周荞</div>
+              <div class="jdmv-actions">
+                <button class="jdmv-act" data-like aria-label="点赞"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.6-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.4-7 10-7 10z" stroke="currentColor" stroke-width="2"/></svg><span>9834</span></button>
+                <button class="jdmv-act" data-save aria-label="收藏"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M6 4h12v16l-6-4-6 4V4z" stroke="currentColor" stroke-width="2"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="jdmv-vcard">
+          <figure>
+            <svg viewBox="0 0 480 270" role="img" aria-label="教程干货场景中台灯、反光板与手机三脚架摆放示意">
+              <rect width="480" height="270" fill="#e9edf4"/>
+              <rect x="60" y="196" width="360" height="8" rx="4" fill="#c7d0de"/>
+              <g>
+                <rect x="98" y="106" width="58" height="68" rx="6" fill="#2b3346"/>
+                <circle cx="127" cy="132" r="16" fill="#ffd98a"/>
+                <path d="M127 146v58" stroke="#2b3346" stroke-width="6"/>
+              </g>
+              <g>
+                <rect x="206" y="120" width="74" height="76" rx="8" fill="#c9d2e2"/>
+                <rect x="216" y="130" width="54" height="56" rx="4" fill="#8d99b0"/>
+              </g>
+              <g>
+                <rect x="320" y="98" width="34" height="98" rx="6" fill="#2b3346"/>
+                <circle cx="337" cy="200" r="10" fill="#ff4d4f"/>
+              </g>
+              <path d="M156 140l46 18" stroke="#e8b04b" stroke-width="2" stroke-dasharray="5 5"/>
+              <path d="M280 150l38 14" stroke="#e8b04b" stroke-width="2" stroke-dasharray="5 5"/>
+              <text x="28" y="42" fill="#6b7789" font-family="sans-serif" font-size="12" letter-spacing="3">LIGHTING 101</text>
+            </svg>
+            <span class="jdmv-dur">09:38</span>
+          </figure>
+          <div class="jdmv-vcard-body">
+            <div class="jdmv-tagrow"><span class="jdmv-tag">教程干货</span><span class="jdmv-tag">实用技巧</span></div>
+            <h3 class="jdmv-vcard-title"><a href="#jdmv-focus">一盏台灯拍出电影感：三种情绪光布置</a></h3>
+            <p class="jdmv-vcard-desc">从顺光到侧逆光，本期把器材清单压到最低，附上两张现场布置示意图。</p>
+            <div class="jdmv-vcard-foot">
+              <div class="jdmv-author-mini"><span class="jdmv-ava" style="background:#3f7a6a">灯</span>阿灯</div>
+              <div class="jdmv-actions">
+                <button class="jdmv-act" data-like aria-label="点赞"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.6-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.4-7 10-7 10z" stroke="currentColor" stroke-width="2"/></svg><span>1.6万</span></button>
+                <button class="jdmv-act" data-save aria-label="收藏"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M6 4h12v16l-6-4-6 4V4z" stroke="currentColor" stroke-width="2"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="jdmv-vcard">
+          <figure>
+            <svg viewBox="0 0 480 270" role="img" aria-label="治愈影像中海边清晨的浪线与贝壳">
+              <defs><linearGradient id="jdmvV5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe0e8"/><stop offset="1" stop-color="#f3ece2"/></linearGradient></defs>
+              <rect width="480" height="270" fill="url(#jdmvV5)"/>
+              <path d="M0 150c60-18 120 14 180-2s120-24 180-6 80 20 120 6v122H0z" fill="#8fb3c4" opacity=".7"/>
+              <path d="M0 190c70-16 130 12 200-4s130-22 200-2 60 14 80 8v78H0z" fill="#5f8ea6" opacity=".75"/>
+              <path d="M0 226c80-10 150 10 240-2s150-14 240 2v44H0z" fill="#e8dfd0"/>
+              <circle cx="392" cy="64" r="26" fill="#f7d9a0"/>
+              <g fill="#fff" opacity=".8"><ellipse cx="110" cy="244" rx="16" ry="8"/><ellipse cx="300" cy="250" rx="12" ry="6"/></g>
+              <text x="28" y="42" fill="#4a6272" font-family="sans-serif" font-size="12" letter-spacing="3">HEALING FRAME</text>
+            </svg>
+            <span class="jdmv-dur">07:24</span>
+          </figure>
+          <div class="jdmv-vcard-body">
+            <div class="jdmv-tagrow"><span class="jdmv-tag">治愈影像</span><span class="jdmv-tag">日常记录</span></div>
+            <h3 class="jdmv-vcard-title"><a href="#jdmv-focus">清晨六点的海边：一段没有旁白的七分钟</a></h3>
+            <p class="jdmv-vcard-desc">潮水、风声和远处的渔船发动机。这是一支被观众称为“可以反复播放”的治愈短片。</p>
+            <div class="jdmv-vcard-foot">
+              <div class="jdmv-author-mini"><span class="jdmv-ava" style="background:#4f7f9c">禾</span>禾屿</div>
+              <div class="jdmv-actions">
+                <button class="jdmv-act" data-like aria-label="点赞"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.6-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.4-7 10-7 10z" stroke="currentColor" stroke-width="2"/></svg><span>2.3万</span></button>
+                <button class="jdmv-act" data-save aria-label="收藏"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M6 4h12v16l-6-4-6 4V4z" stroke="currentColor" stroke-width="2"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="jdmv-vcard">
+          <figure>
+            <svg viewBox="0 0 480 270" role="img" aria-label="行业观察场景中的数据折线与放映幕布">
+              <rect width="480" height="270" fill="#141c2b"/>
+              <g stroke="#2b3446" stroke-width="1"><path d="M60 60h360"/><path d="M60 110h360"/><path d="M60 160h360"/><path d="M60 210h360"/></g>
+              <path d="M70 200l58-26 58 10 58-44 58 12 58-58" fill="none" stroke="#ff4d4f" stroke-width="3.5"/>
+              <g fill="#ff4d4f"><circle cx="128" cy="174" r="5"/><circle cx="186" cy="184" r="5"/><circle cx="244" cy="140" r="5"/><circle cx="302" cy="152" r="5"/><circle cx="360" cy="94" r="5"/></g>
+              <rect x="70" y="36" width="88" height="16" rx="4" fill="#e8b04b" opacity=".8"/>
+              <text x="28" y="252" fill="#7d8aa3" font-family="sans-serif" font-size="12" letter-spacing="3">INDUSTRY WATCH</text>
+            </svg>
+            <span class="jdmv-dur">15:51</span>
+          </figure>
+          <div class="jdmv-vcard-body">
+            <div class="jdmv-tagrow"><span class="jdmv-tag">行业观察</span><span class="jdmv-tag">品牌故事</span></div>
+            <h3 class="jdmv-vcard-title"><a href="#jdmv-focus">影业品牌为什么开始自己做内容</a></h3>
+            <p class="jdmv-vcard-desc">三组数据、五个样本，拆解内容生态里创作者的位置，以及品牌方为什么要长期投入。</p>
+            <div class="jdmv-vcard-foot">
+              <div class="jdmv-author-mini"><span class="jdmv-ava" style="background:#3f4f7a">林</span>林砚</div>
+              <div class="jdmv-actions">
+                <button class="jdmv-act" data-like aria-label="点赞"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.6-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.4-7 10-7 10z" stroke="currentColor" stroke-width="2"/></svg><span>6471</span></button>
+                <button class="jdmv-act" data-save aria-label="收藏"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M6 4h12v16l-6-4-6 4V4z" stroke="currentColor" stroke-width="2"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- M15 关键词深度解析 -->
+  <section class="jdmv-section jdmv-anchor" id="jdmv-about">
+    <div class="jdmv-wrap">
+      <div class="jdmv-sec-head">
+        <div class="jdmv-sec-head-l">
+          <div class="jdmv-kicker">Insight · 品牌解析</div>
+          <h2 class="jdmv-h2">读懂「京东传媒影业视频在线观看」这件事</h2>
+          <p class="jdmv-sec-desc">一个看似简单的搜索词背后，涉及品牌、内容、版权与观看体验四个层面。作为官方网站，我们把这件事讲清楚。</p>
+        </div>
+      </div>
+
+      <div class="jdmv-deep">
+        <div class="jdmv-deep-main">
+          <h3>一、当关键词指向一家企业的官方门户</h3>
+          <p>很多观众第一次搜索“京东传媒影业视频在线观看”，期待的是一个能直接点开、立刻播放的页面。但从企业角度，这个词承载的信息量远大于一个播放按钮。它至少包含三层含义：第一层是<b>品牌身份</b>，用户想知道京东传媒影业究竟是一家怎样的企业；第二层是<b>内容可信度</b>，用户希望看到的是原创、正版、高清的片源，而不是零散转载；第三层是<b>观看路径</b>，用户需要清楚地知道在哪个入口能看到完整内容、哪些是官方发布、哪些是创作者投稿。</p>
+          <p>因此，京东传媒影业官方网站并不只是一个聚合播放页，而是一个内容生态的展示面。我们把片单、专题、创作者、企业动态、榜单与社区互动放在同一个体系里，让一次搜索变成一次了解。对品牌来说，这是持续运营的资产；对观众来说，这是一份可以反复回来的观看清单。我们坚持“用户至上”的原则，把播放页的清晰度、片源的合规性、更新节奏的稳定性放在最优先的位置。</p>
+          <p>也需要坦白地说：在线观看的体验由内容和版权共同决定。影业品牌的正版片源需要经过授权、转码、审核与上线多个环节，通常比短视频慢一步，但换来的是可追溯的品质。官方发布的内容会在页面上标注清晰的来源与更新日期，这是我们区别于非官方渠道最重要的部分。</p>
+
+          <h3>二、内容从哪里来：原创、共创与授权</h3>
+          <p>京东传媒影业的内容主要有三条来源。第一条是<b>原创出品</b>，由影业自有团队完成策划、拍摄与后期，例如剧情短片《长夜有灯》、纪录片《四十七天》系列，这类内容承担着品牌调性与行业影响力的双重任务。第二条是<b>创作者共创</b>，签约创作者与长期合作团队在官方平台上发布作品，平台提供技术、宣发与版权保护支持，创作者保留创作自主权。第三条是<b>正版授权引进</b>，面向优质独立影像与在地文化纪录，通过授权方式纳入片库。</p>
+          <p>三种来源对应三种观看期待。原创内容关注完成度与叙事，通常会配幕后纪录与主创访谈；共创内容关注视角的差异，题材更贴近日常记录、教程干货与城市探索；授权内容则补充片库的多元性，让平台在垂直领域里保持密度。对一个视频品牌来说，只有一种来源是危险的：原创太多会显得封闭，共创太散会显得没有调性，授权太多又会失去辨识度。我们选择让三者长期共存，用编辑推荐与榜单机制做平衡。</p>
+          <p>在具体流程上，每一部作品都要经过三审：内容合规审核、技术质量审核与版权链路审核。审核通过后进入排期，重点内容会同步准备专题页、创作者访谈与图文解读，让观看不终止于播放结束的那一刻。这也是我们理解“精品内容”的方式：不是把一部片子做大，而是让它拥有一个完整的上下文。</p>
+
+          <h3>三、观看之外：内容生态如何持续运转</h3>
+          <p>如果把视频平台比作一家影院，那么片库是银幕，创作者是片方，评论区才是观众席。京东传媒影业视频在线观看的页面里，评论区并不是装饰，它是内容生态的一部分。我们保留了长评与短评两种形态：短评让观众快速表达，长评让讨论沉淀。编辑每周会从评论区里挑选有价值的观察，反过来影响选题方向，这个机制已经持续运转了数个季度。</p>
+          <p>数据层面，平台关注三类指标：<b>完播率</b>反映叙事是否成立，<b>收藏率</b>反映内容是否值得再看，<b>回流率</b>反映社区是否形成习惯。我们不把单一播放量当作唯一标准，因为播放量容易被标题和封面放大，而完播与收藏更能说明作品的实际质量。榜单页面的热度榜、新人榜与口碑榜分别对应这三种不同的评价维度，观众可以看到同一部作品在不同维度上的位置。</p>
+          <p>对创作者而言，平台提供的是持续成长的空间。新锐创作者扶持计划每季度开放一次申报，入选者可以获得拍摄支持、后期协作与官方推荐位。我们更看重“能不能持续拍下去”，而不是“这一条能不能火”。一位能够稳定产出十部作品的创作者，比一位只有一条爆款的创作者更值得长期合作。这也是京东传媒影业作为企业品牌，在内容生态里愿意承担的社会责任：让创作成为可以持续的职业，而不只是一次性的运气。</p>
+
+          <h3>四、如何获得更好的观看体验</h3>
+          <p>想获得更顺畅的京东传媒影业视频在线观看体验，可以从三个细节入手。第一，优先选择官方片单入口，官方发布的内容会在标题与标签上明确标注，画质与音轨也经过统一处理；第二，善用专题页，很多作品之间有前后关联，单独看一集容易漏掉背景，专题页会把相关系列、访谈与幕后整理在一起；第三，关注更新日历，平台通常在每周四集中上新，纪录片与访谈类内容会提前预告，提前预约可以避免错过首播。</p>
+          <p>对于想进一步参与的观众，我们开放了投稿与反馈两个通道。投稿面向有完整作品的创作者，反馈则面向所有观众——包括播放异常、字幕错误、片源建议。每一条反馈都会进入工单系统，由专人跟进。我们相信“值得信赖”不是写在页面上的形容词，而是每一次反馈都被认真对待的结果。</p>
+          <p>最后要说明的是，关键词“京东传媒影业视频在线观看”最终指向的，是人与影像之间的一次相遇。技术决定这次相遇是否顺畅，内容决定这次相遇是否值得，而品牌决定观众是否愿意再来一次。我们愿意在这三件事上都做得更久一点、更慢一点，也更认真一点。</p>
+        </div>
+
+        <aside class="jdmv-deep-aside">
+          <div class="jdmv-panel">
+            <h4>关键数据一览</h4>
+            <ul class="jdmv-panel-list">
+              <li><span>正版高清片单</span><b>1286+</b></li>
+              <li><span>签约创作者</span><b>326 位</b></li>
+              <li><span>月度观看人次</span><b>9400 万</b></li>
+              <li><span>专题企划累计</span><b>147 期</b></li>
+              <li><span>平均完播率</span><b>68.4%</b></li>
+            </ul>
+          </div>
+          <div class="jdmv-quote">
+            <p>“我们不做一次性流量，我们做可以反复观看的片单。影业的价值，在十年之后仍有人点开。”</p>
+            <cite>—— 京东传媒影业内容中心</cite>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="jdmv-section jdmv-section-alt jdmv-anchor" id="jdmv-topics">
+    <div class="jdmv-wrap">
+      <div class="jdmv-sec-head">
+        <div class="jdmv-sec-head-l">
+          <div class="jdmv-kicker">Series · 专题企划</div>
+          <h2 class="jdmv-h2">影业品牌的长期专题</h2>
+          <p class="jdmv-sec-desc">专题是内容生态的骨架。每个专题至少延续三个月，持续更新，完整呈现一个主题在时间里的变化。</p>
+        </div>
+      </div>
+
+      <div class="jdmv-topics">
+        <article class="jdmv-topic feature">
+          <figure>
+            <svg viewBox="0 0 640 300" role="img" aria-label="专题四十七天封面：片场打板与连续拍摄日历">
+              <defs><linearGradient id="jdmvT1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a2233"/><stop offset="1" stop-color="#40302a"/></linearGradient></defs>
+              <rect width="640" height="300" fill="url(#jdmvT1)"/>
+              <g>
+                <rect x="66" y="86" width="150" height="104" rx="6" fill="#f0e6db"/>
+                <rect x="66" y="86" width="150" height="30" rx="6" fill="#2b3346"/>
+                <path d="M84 86l18-18 14 18 18-18 14 18" stroke="#c9d2e2" stroke-width="4" fill="none"/>
+                <text x="98" y="152" fill="#2b3346" font-family="sans-serif" font-size="22" font-weight="700">SCENE 12</text>
+                <text x="98" y="174" fill="#7a6a58" font-family="sans-serif" font-size="12">TAKE 19 · OK</text>
+              </g>
+              <g fill="#3c465c">
+                <rect x="270" y="86" width="46" height="46" rx="4"/><rect x="326" y="86" width="46" height="46" rx="4" fill="#ff4d4f"/><rect x="382" y="86" width="46" height="46" rx="4"/>
+                <rect x="438" y="86" width="46" height="46" rx="4" fill="#e8b04b"/><rect x="494" y="86" width="46" height="46" rx="4"/>
+                <rect x="270" y="142" width="46" height="46" rx="4"/><rect x="326" y="142" width="46" height="46" rx="4"/><rect x="382" y="142" width="46" height="46" rx="4" fill="#ff4d4f"/>
+                <rect x="438" y="142" width="46" height="46" rx="4"/><rect x="494" y="142" width="46" height="46" rx="4"/>
+              </g>
+              <text x="66" y="232" fill="#9aa6bb" font-family="sans-serif" font-size="13" letter-spacing="3">DOCUMENTARY · 47 DAYS · EP 03 UPDATED</text>
+            </svg>
+          </figure>
+          <div class="jdmv-topic-body">
+            <span class="jdmv-status jdmv-status-live"><i></i>连载中 · 每周四更新</span>
+            <h3 class="jdmv-topic-title">纪录片专题《四十七天》</h3>
+            <p class="jdmv-topic-desc">一部关于“坚持拍完”的纪录片。从立项到杀青，四十七天的完整记录，包含三次停拍、两次换景与一场大雨。</p>
+            <ul class="jdmv-topic-list">
+              <li><span>01</span>第1集：城市凌晨四点的守夜人</li>
+              <li><span>02</span>第2集：一场长镜头拍了十九条</li>
+              <li><span>03</span>第3集：旧厂房里的十三天（最新）</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="jdmv-topic">
+          <div class="jdmv-topic-body">
+            <span class="jdmv-status jdmv-status-live"><i></i>征集中 · 报名进行中</span>
+            <h3 class="jdmv-topic-title">新锐创作者扶持计划 · 第二季</h3>
+            <p class="jdmv-topic-desc">面向影业垂直领域的青年创作者，提供拍摄支持、后期协作与官方推荐位。已连续运营三季，累计扶持四十二位创作者。</p>
+            <ul class="jdmv-topic-list">
+              <li><span>01</span>申报通道：提交完整作品与创作计划</li>
+              <li><span>02</span>评审机制：编辑部初评 + 创作者互评</li>
+              <li><span>03</span>公布节奏：每季度末集中公布入选名单</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="jdmv-topic">
+          <div class="jdmv-topic-body">
+            <span class="jdmv-status jdmv-status-soon">筹备中 · 12月上线</span>
+            <h3 class="jdmv-topic-title">在地影像：十二座城市的夜晚</h3>
+            <p class="jdmv-topic-desc">以城市为单位，用一部短片记录一座城的夜晚。首季覆盖十二座城市，由在地创作者独立完成拍摄。</p>
+            <ul class="jdmv-topic-list">
+              <li><span>01</span>主题设定：夜晚的城市属于谁</li>
+              <li><span>02</span>拍摄方式：一人一机，不设脚本</li>
+              <li><span>03</span>呈现形式：正片 + 拍摄日志双线更新</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵 -->
+  <section class="jdmv-section jdmv-anchor" id="jdmv-creators">
+    <div class="jdmv-wrap">
+      <div class="jdmv-sec-head">
+        <div class="jdmv-sec-head-l">
+          <div class="jdmv-kicker">Creators · 创作者矩阵</div>
+          <h2 class="jdmv-h2">京东传媒影业的长期合作创作者</h2>
+          <p class="jdmv-sec-desc">平台以创作者为核心，建立长期协作机制。以下是本季度活跃的四位创作者，点击头像可查看简介。</p>
+        </div>
+        <a class="jdmv-sec-link" href="#jdmv-cta">加入我们</a>
+      </div>
+
+      <div class="jdmv-authors">
+        <article class="jdmv-author">
+          <span class="jdmv-author-ava" style="background:linear-gradient(140deg,#e2382f,#8f1f18)">沈</span>
+          <div class="jdmv-author-main">
+            <h3 class="jdmv-author-name">沈屿 <span class="jdmv-badge">签约导演</span></h3>
+            <div class="jdmv-author-field">剧情短片 · 叙事实验</div>
+            <p class="jdmv-author-bio">毕业于电影学院导演系，擅长用克制的镜头记录城市边缘人物。执导《长夜有灯》系列与多部实验短片，作品入围多个独立影像展映。相信故事的力量来自真实的细节，而不是戏剧性的扭转。</p>
+            <div class="jdmv-author-nums"><span>作品 <b>23</b></span><span>粉丝 <b>48.6万</b></span><span>完播率 <b>71%</b></span></div>
+          </div>
+        </article>
+
+        <article class="jdmv-author">
+          <span class="jdmv-author-ava" style="background:linear-gradient(140deg,#5a6b8c,#2b3550)">陆</span>
+          <div class="jdmv-author-main">
+            <h3 class="jdmv-author-name">陆行笔记 <span class="jdmv-badge">官方合作</span></h3>
+            <div class="jdmv-author-field">城市探索 · 在地文化</div>
+            <p class="jdmv-author-bio">三人小组，长期做城市漫步影像，走完过六座老城的天台与巷弄。我们更愿意把摄像机放在口袋里，先走一遍再决定拍什么。更新节奏稳定，每两周一部短片，配有手绘路线图。</p>
+            <div class="jdmv-author-nums"><span>作品 <b>57</b></span><span>粉丝 <b>31.2万</b></span><span>完播率 <b>64%</b></span></div>
+          </div>
+        </article>
+
+        <article class="jdmv-author">
+          <span class="jdmv-author-ava" style="background:linear-gradient(140deg,#e8b04b,#a9772a)">周</span>
+          <div class="jdmv-author-main">
+            <h3 class="jdmv-author-name">周荞 <span class="jdmv-badge">签约剪辑师</span></h3>
+            <div class="jdmv-author-field">剪辑 · 人物访谈</div>
+            <p class="jdmv-author-bio">十二年剪辑经验，从广告剪到长片。她习惯先剪一版“最长的版本”，再一点一点删到刚刚好。近期在平台上连载剪辑手记，分享被删掉的片段与判断依据，被观众称为“最舍得分享的人”。</p>
+            <div class="jdmv-author-nums"><span>作品 <b>41</b></span><span>粉丝 <b>26.8万</b></span><span>完播率 <b>69%</b></span></div>
+          </div>
+        </article>
+
+        <article class="jdmv-author">
+          <span class="jdmv-author-ava" style="background:linear-gradient(140deg,#3f7a6a,#245044)">灯</span>
+          <div class="jdmv-author-main">
+            <h3 class="jdmv-author-name">阿灯 <span class="jdmv-badge">新人推荐</span></h3>
+            <div class="jdmv-author-field">教程干货 · 实用技巧</div>
+            <p class="jdmv-author-bio">自由摄影师，专注低预算拍摄方案。相信设备不是门槛，观察才是。教程里会公开完整的器材清单与失败案例，也乐于回答观众在评论区提出的具体问题，是新锐创作者扶持计划第一季入选者。</p>
+            <div class="jdmv-author-nums"><span>作品 <b>36</b></span><span>粉丝 <b>19.4万</b></span><span>完播率 <b>73%</b></span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 数据榜单 -->
+  <section class="jdmv-section jdmv-section-alt jdmv-anchor" id="jdmv-board">
+    <div class="jdmv-wrap">
+      <div class="jdmv-sec-head">
+        <div class="jdmv-sec-head-l">
+          <div class="jdmv-kicker">Board · 数据榜单</div>
+          <h2 class="jdmv-h2">本周京东传媒影业视频热度榜</h2>
+          <p class="jdmv-sec-desc">榜单每周四更新，按完播率、收藏率与回流率综合计算，与单一播放量区分开，帮助观众找到真正值得看完的作品。</p>
+        </div>
+      </div>
+
+      <div class="jdmv-board">
+        <div class="jdmv-board-col">
+          <div class="jdmv-board-head"><h3>热度榜</h3><span>WEEK 47</span></div>
+          <div class="jdmv-board-row"><span class="jdmv-rank top">1</span><span class="jdmv-board-name">《长夜有灯》第1集</span><span class="jdmv-board-val">216.4万</span></div>
+          <div class="jdmv-board-row"><span class="jdmv-rank top">2</span><span class="jdmv-board-name">清晨六点的海边</span><span class="jdmv-board-val">188.7万</span></div>
+          <div class="jdmv-board-row"><span class="jdmv-rank top">3</span><span class="jdmv-board-name">一盏台灯拍出电影感</span><span class="jdmv-board-val">164.2万</span></div>
+          <div class="jdmv-board-row"><span class="jdmv-rank">4</span><span class="jdmv-board-name">黄昏天台地图</span><span class="jdmv-board-val">121.5万</span></div>
+          <div class="jdmv-board-row"><span class="jdmv-rank">5</span><span class="jdmv-board-name">和周荞聊剪辑</span><span class="jdmv-board-val">96.3万</span></div>
+        </div>
+
+        <div class="jdmv-board-col">
+          <div class="jdmv-board-head"><h3>新人榜</h3><span>NEW COMER</span></div>
+          <div class="jdmv-board-row"><span class="jdmv-rank top">1</span><span class="jdmv-board-name">阿灯</span><span class="jdmv-board-val">+184%</span></div>
+          <div class="jdmv-board-row"><span class="jdmv-rank top">2</span><span class="jdmv-board-name">禾屿</span><span class="jdmv-board-val">+152%</span></div>
+          <div class="jdmv-board-row"><span class="jdmv-rank top">3</span><span class="jdmv-board-name">拾光剪辑室</span><span class="jdmv-board-val">+121%</span></div>
+          <div class="jdmv-board-row"><span class="jdmv-rank">4</span><span class="jdmv-board-name">旧厂房计划</span><span class="jdmv-board-val">+98%</span></div>
+          <div class="jdmv-board-row"><span class="jdmv-rank">5</span><span class="jdmv-board-name">南岸手记</span><span class="jdmv-board-val">+76%</span></div>
+        </div>
+
+        <div class="jdmv-board-col">
+          <div class="jdmv-board-head"><h3>口碑榜</h3><span>RATING</span></div>
+          <div class="jdmv-board-row"><span class="jdmv-rank top">1</span><span class="jdmv-board-name">四十七天 · 幕后</span><span class="jdmv-board-val">9.6</span></div>
+          <div class="jdmv-board-row"><span class="jdmv-rank top">2</span><span class="jdmv-board-name">长夜有灯</span><span class="jdmv-board-val">9.4</span></div>
+          <div class="jdmv-board-row"><span class="jdmv-rank top">3</span><span class="jdmv-board-name">和周荞聊剪辑</span><span class="jdmv-board-val">9.2</span></div>
+          <div class="jdmv-board-row"><span class="jdmv-rank">4</span><span class="jdmv-board-name">黄昏天台地图</span><span class="jdmv-board-val">9.0</span></div>
+          <div class="jdmv-board-row"><span class="jdmv-rank">5</span><span class="jdmv-board-name">一盏台灯拍出电影感</span><span class="jdmv-board-val">8.9</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- M6 品牌故事时间线 -->
+  <section class="jdmv-section">
+    <div class="jdmv-wrap">
+      <div class="jdmv-sec-head">
+        <div class="jdmv-sec-head-l">
+          <div class="jdmv-kicker">Story · 品牌故事</div>
+          <h2 class="jdmv-h2">京东传媒影业的成长时间线</h2>
+          <p class="jdmv-sec-desc">一家影业品牌的成长，不靠一句口号，而靠一部部拍完的片子。四个节点，记录我们如何走到今天。</p>
+        </div>
+      </div>
+
+      <div class="jdmv-time">
+        <div class="jdmv-time-item">
+          <div class="jdmv-time-year">2019 · 起于一次内部放映</div>
+          <h3 class="jdmv-time-title">从十几个人看片的小房间开始</h3>
+          <p class="jdmv-time-text">品牌最初只是一支十二人的影像小组，每月在会议室放映一次自制短片。第一次放映只有十几位观众，但那一年我们确定了“先拍完，再谈传播”的原则，也确定了内容生态的基本方向。</p>
+        </div>
+        <div class="jdmv-time-item">
+          <div class="jdmv-time-year">2021 · 官方网站上线</div>
+          <h3 class="jdmv-time-title">把片单搬到线上，建立创作者入口</h3>
+          <p class="jdmv-time-text">京东传媒影业官方网站正式上线，首批上线一百八十部正版高清片源，同步开放创作者投稿入口。那一年我们第一次收到来自陌生城市创作者的投稿，也第一次意识到平台的责任比想象中更大。</p>
+        </div>
+        <div class="jdmv-time-item">
+          <div class="jdmv-time-year">2023 · 新锐创作者扶持计划</div>
+          <h3 class="jdmv-time-title">让创作成为可以持续的职业</h3>
+          <p class="jdmv-time-text">平台启动扶持计划，提供拍摄支持、后期协作与官方推荐位。三季累计四十二位创作者入选，其中七位完成了从短片到中长片的跨越。我们更关注的不是某一条爆款，而是创作者能否持续拍下去。</p>
+        </div>
+        <div class="jdmv-time-item">
+          <div class="jdmv-time-year">2026 · 专题化与长期主义</div>
+          <h3 class="jdmv-time-title">从单部作品走向长期专题</h3>
+          <p class="jdmv-time-text">本年度平台上线《四十七天》《十二座城市的夜晚》等多个长期专题，把单部作品放进更长的时间线里观看。精品内容不再是一次发布，而是一段持续更新的过程，这也是我们对“值得信赖”的理解。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 用户评价 双列 -->
+  <section class="jdmv-section jdmv-section-alt">
+    <div class="jdmv-wrap">
+      <div class="jdmv-sec-head">
+        <div class="jdmv-sec-head-l">
+          <div class="jdmv-kicker">Reviews · 观众评价</div>
+          <h2 class="jdmv-h2">来自社区的真实声音</h2>
+          <p class="jdmv-sec-desc">这些评价来自评论区、反馈工单与线下放映活动，我们保留原始语气，不做修饰。</p>
+        </div>
+      </div>
+
+      <div class="jdmv-comments">
+        <div class="jdmv-comment">
+          <div class="jdmv-comment-top"><span class="jdmv-ava" style="background:#5a6b8c">陈</span><span class="jdmv-comment-name">陈默</span><span class="jdmv-comment-when">11月20日</span></div>
+          <p>《长夜有灯》第1集我看了三遍。第三遍才发现开头那盏灯的位置和结尾是呼应的，这种细节现在很少见了。希望京东传媒影业多拍这种不着急的片子。</p>
+          <div class="jdmv-stars">★★★★★</div>
+        </div>
+        <div class="jdmv-comment">
+          <div class="jdmv-comment-top"><span class="jdmv-ava" style="background:#3f7a6a">小</span><span class="jdmv-comment-name">小满不加班</span><span class="jdmv-comment-when">11月19日</span></div>
+          <p>作为正在学剪辑的在校生，周荞那期访谈对我帮助很大。她讲“先剪最长版本”的方法，我照着做了一遍，片子节奏确实清楚了。</p>
+          <div class="jdmv-stars">★★★★★</div>
+        </div>
+        <div class="jdmv-comment">
+          <div class="jdmv-comment-top"><span class="jdmv-ava" style="background:#8c6a3f">老</span><span class="jdmv-comment-name">老周拍片</span><span class="jdmv-comment-when">11月18日</span></div>
+          <p>优点：片源清晰度稳定，专题做得很用心，幕后内容给得实在。建议：移动端进度条拖动偶尔不够跟手，希望能优化一下播放器体验。</p>
+          <div class="jdmv-stars">★★★★☆</div>
+        </div>
+        <div class="jdmv-comment">
+          <div class="jdmv-comment-top"><span class="jdmv-ava" style="background:#4f7f9c">南</span><span class="jdmv-comment-name">南岸的鱼</span><span class="jdmv-comment-when">11月17日</span></div>
+          <p>清晨六点那支短片我通常配着早餐看，没有旁白反而更放松。收藏夹里已经存了十几部，周末会一部部补完。</p>
+          <div class="jdmv-stars">★★★★★</div>
+        </div>
+        <div class="jdmv-comment">
+          <div class="jdmv-comment-top"><span class="jdmv-ava" style="background:#7a3f6a">影</span><span class="jdmv-comment-name">影迷阿哲</span><span class="jdmv-comment-when">11月16日</span></div>
+          <p>对比了几家同类平台，京东传媒影业在原创和正版授权上的比例是最清楚的，页面会明确标注来源。这一点对长期观看的人来说很重要。</p>
+          <div class="jdmv-stars">★★★★★</div>
+        </div>
+        <div class="jdmv-comment">
+          <div class="jdmv-comment-top"><span class="jdmv-ava" style="background:#a9772a">林</span><span class="jdmv-comment-name">林间有风</span><span class="jdmv-comment-when">11月15日</span></div>
+          <p>投稿过一次，虽然没入选，但收到了很具体的修改建议，不是模板回复。这种反馈机制会让人愿意再拍第二条。</p>
+          <div class="jdmv-stars">★★★★☆</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 企业动态 + 合作品牌 -->
+  <section class="jdmv-section jdmv-anchor" id="jdmv-news">
+    <div class="jdmv-wrap">
+      <div class="jdmv-sec-head">
+        <div class="jdmv-sec-head-l">
+          <div class="jdmv-kicker">News · 企业动态</div>
+          <h2 class="jdmv-h2">官方发布与内容更新日志</h2>
+          <p class="jdmv-sec-desc">品牌动态、片单更新与活动公告都在这里。所有信息以官方发布为准，转载需注明来源。</p>
+        </div>
+      </div>
+
+      <div class="jdmv-news-grid">
+        <div class="jdmv-news">
+          <div class="jdmv-news-item">
+            <div class="jdmv-news-date"><b>22</b><span>11月</span></div>
+            <div class="jdmv-news-main">
+              <h3 class="jdmv-news-title">《四十七天》第3集上线，专题页同步开放幕后手记</h3>
+              <p class="jdmv-news-desc">本集完整记录了旧厂房十三天的连续作业，附主创手记与未采用片段。</p>
+            </div>
+          </div>
+          <div class="jdmv-news-item">
+            <div class="jdmv-news-date"><b>20</b><span>11月</span></div>
+            <div class="jdmv-news-main">
+              <h3 class="jdmv-news-title">新锐创作者扶持计划第二季开启申报</h3>
+              <p class="jdmv-news-desc">面向影业垂直领域创作者，提交完整作品与创作计划即可参与，本季度末公布入选名单。</p>
+            </div>
+          </div>
+          <div class="jdmv-news-item">
+            <div class="jdmv-news-date"><b>18</b><span>11月</span></div>
+            <div class="jdmv-news-main">
+              <h3 class="jdmv-news-title">播放器体验升级：支持倍速记忆与断点续看</h3>
+              <p class="jdmv-news-desc">本次更新覆盖移动端与网页端，倍速与观看进度将在同一账号下同步。</p>
+            </div>
+          </div>
+          <div class="jdmv-news-item">
+            <div class="jdmv-news-date"><b>14</b><span>11月</span></div>
+            <div class="jdmv-news-main">
+              <h3 class="jdmv-news-title">《十二座城市的夜晚》专题正式立项</h3>
+              <p class="jdmv-news-desc">首季覆盖十二座城市，由在地创作者独立完成拍摄，预计12月起陆续上线。</p>
+            </div>
+          </div>
+          <div class="jdmv-news-item">
+            <div class="jdmv-news-date"><b>08</b><span>11月</span></div>
+            <div class="jdmv-news-main">
+              <h3 class="jdmv-news-title">十一月片单发布：十二部正版高清作品上新</h3>
+              <p class="jdmv-news-desc">涵盖剧情短片、纪录片与人物访谈三类，全部经过技术质量与版权链路审核。</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="jdmv-partners">
+            <div class="jdmv-partner"><span class="jdmv-partner-ico" style="background:#e2382f">光</span><div><b>光点影像实验室</b><span>后期协作伙伴</span></div></div>
+            <div class="jdmv-partner"><span class="jdmv-partner-ico" style="background:#3f4f7a">城</span><div><b>城市漫游计划</b><span>专题联合出品</span></div></div>
+            <div class="jdmv-partner"><span class="jdmv-partner-ico" style="background:#3f7a6a">胶</span><div><b>胶片仓库</b><span>设备与技术支持</span></div></div>
+            <div class="jdmv-partner"><span class="jdmv-partner-ico" style="background:#a9772a">独</span><div><b>独立影像展映</b><span>展映与发行合作</span></div></div>
+            <div class="jdmv-partner"><span class="jdmv-partner-ico" style="background:#7a3f6a">声</span><div><b>声场录音棚</b><span>音效与混音支持</span></div></div>
+            <div class="jdmv-partner"><span class="jdmv-partner-ico" style="background:#5a6b8c">学</span><div><b>高校影视联盟</b><span>青年创作者培养</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 FAQ -->
+  <section class="jdmv-section jdmv-section-alt jdmv-anchor" id="jdmv-faq">
+    <div class="jdmv-wrap">
+      <div class="jdmv-sec-head">
+        <div class="jdmv-sec-head-l">
+          <div class="jdmv-kicker">FAQ · 常见问题</div>
+          <h2 class="jdmv-h2">关于观看、投稿与版权</h2>
+          <p class="jdmv-sec-desc">我们整理了观众与创作者最常提出的七个问题，点击展开查看详细说明。</p>
+        </div>
+      </div>
+
+      <div class="jdmv-faq">
+        <details open>
+          <summary>如何在线观看京东传媒影业的完整片单？</summary>
+          <p>在官方网站的「视频专区」入口可浏览全部正版高清片单，专题页会按主题聚合相关系列。部分作品提供预约功能，上线当天会在公告条与更新日志中同步提示，建议收藏页面以便回访。</p>
+        </details>
+        <details>
+          <summary>平台上的内容都是原创或正版授权的吗？</summary>
+          <p>是的。页面内容分为原创出品、创作者共创与正版授权引进三类，每一部作品在详情中都会标注来源与合作方。所有片源在上线前都经过内容合规、技术质量与版权链路三重审核。</p>
+        </details>
+        <details>
+          <summary>创作者如何投稿？需要满足什么条件？</summary>
+          <p>可通过页面内的「投稿入口」提交作品简介、成片链接与创作计划。我们不设粉丝量门槛，更看重作品完整度与持续创作的可能。提交后一般在十个工作日内收到初审反馈，未入选也会给出具体修改建议。</p>
+        </details>
+        <details>
+          <summary>新锐创作者扶持计划怎么报名？</summary>
+          <p>该计划每季度开放一次申报，入口位于专题企划页。入选者可获得拍摄支持、后期协作与官方推荐位。评审采用编辑部初评加创作者互评的方式，名单在季度末集中公布。</p>
+        </details>
+        <details>
+          <summary>排行榜的计算方式是什么？</summary>
+          <p>热度榜按播放、互动与传播综合计算；新人榜依据近三十天的成长幅度；口碑榜参考完播率、收藏率与长评质量。三个榜单分别回答“现在最热”“谁在成长”“哪部最值得看完”三个问题。</p>
+        </details>
+        <details>
+          <summary>发现播放异常或字幕错误，怎么反馈？</summary>
+          <p>可在对应作品页使用「反馈」入口提交问题，注明设备、时间与具体现象。所有反馈会进入工单系统由专人跟进，技术类问题通常在三个工作日内处理完毕并回复。</p>
+        </details>
+        <details>
+          <summary>可以使用平台内容做二次创作吗？</summary>
+          <p>原创作品默认保留版权，二次创作需获得授权。平台对评论、解析类内容持开放态度，标注来源并附上作品页链接即可；商业用途与完整搬运不在允许范围内，具体可查看作品详情页的授权说明。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 投稿 CTA -->
+  <section class="jdmv-section jdmv-anchor" id="jdmv-cta">
+    <div class="jdmv-wrap">
+      <div class="jdmv-cta">
+        <div class="jdmv-cta-main">
+          <h2>把你的作品放上京东传媒影业的片单</h2>
+          <p>无论是一部十分钟的短片，还是一段三分钟的日常记录，只要拍完，就值得被看见。投稿通道长期开放，编辑部会认真看完每一条提交。</p>
+        </div>
+        <div class="jdmv-cta-actions">
+          <button class="jdmv-btn jdmv-btn-primary" id="jdmvCtaSubmit">立即投稿</button>
+          <button class="jdmv-btn jdmv-btn-line" id="jdmvCopyLink" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.32)">复制分享链接</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="jdmv-footer">
+  <div class="jdmv-wrap">
+    <div class="jdmv-footer-grid">
+      <div>
+        <div class="jdmv-brand">
+          <span class="jdmv-brand-mark" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 5l12 7-12 7V5z" fill="#ff4d4f"/></svg>
+          </span>
+          <span>
+            <span class="jdmv-brand-name">京东传媒<em>影业</em></span>
+            <span class="jdmv-brand-sub">JDMV · 官方视频门户</span>
+          </span>
+        </div>
+        <p class="jdmv-footer-about">京东传媒影业官方网站，专注原创、正版、高清的影业视频内容生态，为创作者与企业搭建值得信赖的社区平台。我们深耕垂直领域，坚持用户至上与匠心制作，持续运营中。</p>
+      </div>
+      <div>
+        <h4>内容入口</h4>
+        <ul>
+          <li><a href="#jdmv-focus">焦点片单</a></li>
+          <li><a href="#jdmv-videos">视频专区</a></li>
+          <li><a href="#jdmv-topics">专题企划</a></li>
+          <li><a href="#jdmv-board">数据榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <ul>
+          <li><a href="#jdmv-about">品牌解析</a></li>
+          <li><a href="#jdmv-creators">创作者矩阵</a></li>
+          <li><a href="#jdmv-news">企业动态</a></li>
+          <li><a href="#jdmv-faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>合作与联系</h4>
+        <ul>
+          <li><a href="#jdmv-cta">作品投稿</a></li>
+          <li><a href="#jdmv-news">合作品牌</a></li>
+          <li><a href="#jdmv-faq">版权说明</a></li>
+          <li><a href="#jdmv-top">回到顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="jdmv-footer-bottom">
+      <span>© 2026 京东传媒影业 版权所有 · 官方网站 · 持续运营中</span>
+      <span>京ICP备00000000号-1 · 网络文化经营许可证 · 内容均经正版授权或原创出品</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="jdmv-toast" id="jdmvToast" role="status" aria-live="polite"></div>
+
+<!-- 投稿 / 反馈 弹窗 -->
+<div class="jdmv-modal-mask" id="jdmvModalMask">
+  <div class="jdmv-modal-wrap jdmv-modal" role="dialog" aria-modal="true" aria-labelledby="jdmvModalTitle">
+    <button class="jdmv-modal-close" id="jdmvModalClose" aria-label="关闭">×</button>
+    <h3 id="jdmvModalTitle">作品投稿</h3>
+    <p>填写作品基本信息，编辑部将在十个工作日内给出初审反馈。</p>
+    <input id="jdmvModalName" type="text" placeholder="你的昵称或团队名称" aria-label="昵称">
+    <input id="jdmvModalLink" type="text" placeholder="成片链接或作品说明（选填）" aria-label="作品链接">
+    <textarea id="jdmvModalText" rows="3" placeholder="用一两句话介绍这部作品" aria-label="作品介绍"></textarea>
+    <div class="jdmv-modal-foot">
+      <button class="jdmv-btn jdmv-btn-line" id="jdmvModalCancel" style="height:38px;padding:0 18px">取消</button>
+      <button class="jdmv-btn jdmv-btn-primary" id="jdmvModalSend" style="height:38px;padding:0 20px">提交</button>
+    </div>
+  </div>
+</div>
+
+<button class="jdmv-totop" id="jdmvToTop" aria-label="回到顶部">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 19V6" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><path d="M6 11l6-6 6 6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  var toast = document.getElementById('jdmvToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('on'); }, 2200);
+  }
+
+  /* 1. 移动端导航折叠 */
+  var burger = document.getElementById('jdmvBurger');
+  var nav = document.getElementById('jdmvNav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('on');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.innerWidth <= 820){
+      nav.classList.remove('on');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* 2. 搜索前端反馈 */
+  var searchInput = document.getElementById('jdmvSearchInput');
+  var searchTip = document.getElementById('jdmvSearchTip');
+  var searchIndex = [
+    {t:'《长夜有灯》第1集 · 剧情短片', a:'#jdmv-focus'},
+    {t:'《四十七天》纪录片专题', a:'#jdmv-topics'},
+    {t:'一盏台灯拍出电影感 · 教程', a:'#jdmv-videos'},
+    {t:'周荞 · 剪辑师访谈', a:'#jdmv-creators'},
+    {t:'本周京东传媒影业热度榜', a:'#jdmv-board'},
+    {t:'新锐创作者扶持计划第二季', a:'#jdmv-topics'},
+    {t:'版权与投稿常见问题', a:'#jdmv-faq'}
+  ];
+  function renderSearch(kw){
+    var q = (kw || '').trim();
+    var list = q ? searchIndex.filter(function(it){ return it.t.indexOf(q) > -1; }) : searchIndex.slice(0,4);
+    if(!list.length){
+      searchTip.innerHTML = '<li data-empty="1">未找到相关片单，换个关键词试试</li>';
+    }else{
+      searchTip.innerHTML = list.map(function(it){
+        return '<li data-href="' + it.a + '">' + it.t + '</li>';
+      }).join('');
+    }
+    searchTip.classList.add('on');
+  }
+  searchInput.addEventListener('focus', function(){ renderSearch(searchInput.value); });
+  searchInput.addEventListener('input', function(){ renderSearch(searchInput.value); });
+  searchTip.addEventListener('click', function(e){
+    var li = e.target.closest('li');
+    if(!li) return;
+    if(li.getAttribute('data-empty')){ return; }
+    var href = li.getAttribute('data-href');
+    searchTip.classList.remove('on');
+    searchInput.blur();
+    if(href){
+      var target = document.querySelector(href);
+      if(target){ target.scrollIntoView({behavior:'smooth', block:'start'}); }
+    }
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.jdmv-search')){ searchTip.classList.remove('on'); }
+  });
+  document.getElementById('jdmvSearchBtn').addEventListener('click', function(){
+    var q = searchInput.value.trim();
+    if(!q){ showToast('请输入关键词，如「纪录片」或「访谈」'); searchInput.focus(); return; }
+    var hit = searchIndex.filter(function(it){ return it.t.indexOf(q) > -1; });
+    if(hit.length){
+      var target = document.querySelector(hit[0].a);
+      if(target){ target.scrollIntoView({behavior:'smooth', block:'start'}); }
+      showToast('已定位到相关片单：' + hit.length + ' 条结果');
+      searchTip.classList.remove('on');
+    }else{
+      showToast('暂未匹配到「' + q + '」，可浏览视频专区');
+    }
+  });
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ document.getElementById('jdmvSearchBtn').click(); }
+  });
+
+  /* 3. 点赞 +1/-1 */
+  document.querySelectorAll('[data-like]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      var span = btn.querySelector('span');
+      var raw = span.textContent.replace(/[^\d.]/g,'');
+      var num = parseFloat(raw) || 0;
+      var isLiked = btn.classList.toggle('liked');
+      if(isLiked){
+        num = num + (num >= 1000 ? 0.1 : 1);
+        showToast('已点赞，感谢支持');
+      }else{
+        num = num - (num >= 1000 ? 0.1 : 1);
+        showToast('已取消点赞');
+      }
+      if(raw.indexOf('万') > -1){
+        span.textContent = (Math.max(num, 0)).toFixed(1) + '万';
+      }else{
+        span.textContent = Math.max(Math.round(num), 0);
+      }
+    });
+  });
+
+  /* 4. 收藏切换 */
+  document.querySelectorAll('[data-save]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      var on = btn.classList.toggle('saved');
+      var span = btn.querySelector('span');
+      var svg = btn.querySelector('svg');
+      if(on){
+        span.textContent = '已收藏';
+        svg.setAttribute('fill','currentColor');
+        showToast('已加入收藏夹，可在个人中心查看');
+      }else{
+        span.textContent = '收藏';
+        svg.setAttribute('fill','none');
+        showToast('已取消收藏');
+      }
+    });
+  });
+
+  /* 5. 投稿弹窗 */
+  var mask = document.getElementById('jdmvModalMask');
+  function openModal(){
+    mask.classList.add('on');
+    document.getElementById('jdmvModalName').focus();
+  }
+  function closeModal(){ mask.classList.remove('on'); }
+  document.getElementById('jdmvOpenSubmit').addEventListener('click', openModal);
+  document.getElementById('jdmvCtaSubmit').addEventListener('click', openModal);
+  document.getElementById('jdmvModalClose').addEventListener('click', closeModal);
+  document.getElementById('jdmvModalCancel').addEventListener('click', closeModal);
+  mask.addEventListener('click', function(e){ if(e.target === mask){ closeModal(); } });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ closeModal(); } });
+  document.getElementById('jdmvModalSend').addEventListener('click', function(){
+    var name = document.getElementById('jdmvModalName').value.trim();
+    if(!name){ showToast('请填写昵称或团队名称'); return; }
+    closeModal();
+    showToast('投稿已提交，编辑部将在十个工作日内反馈');
+    document.getElementById('jdmvModalName').value = '';
+    document.getElementById('jdmvModalLink').value = '';
+    document.getElementById('jdmvModalText').value = '';
+  });
+
+  /* 6. 复制分享链接 */
+  document.getElementById('jdmvCopyLink').addEventListener('click', function(){
+    var shareText = '京东传媒影业 · 原创正版高清影业视频，值得一看。';
+    function fallback(){
+      var ta = document.createElement('textarea');
+      ta.value = shareText;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try{ document.execCommand('copy'); showToast('分享文案已复制'); }
+      catch(err){ showToast('复制失败，请手动收藏本页'); }
+      document.body.removeChild(ta);
+    }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(shareText).then(function(){
+        showToast('分享文案已复制');
+      }).catch(fallback);
+    }else{
+      fallback();
+    }
+  });
+
+  /* 7. 回到顶部 */
+  var toTop = document.getElementById('jdmvToTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){ toTop.classList.add('on'); }
+    else{ toTop.classList.remove('on'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 8. 数据数字滚动 */
+  var stats = document.querySelectorAll('[data-count]');
+  var counted = false;
+  function runCount(){
+    if(counted) return;
+    counted = true;
+    stats.forEach(function(el){
+      var end = parseInt(el.getAttribute('data-count'), 10) || 0;
+      var suffixEl = el.querySelector('span');
+      var suffix = suffixEl ? suffixEl.textContent : '';
+      var start = 0, dur = 1100, t0 = null;
+      function tick(ts){
+        if(!t0) t0 = ts;
+        var p = Math.min((ts - t0) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        var val = Math.round(start + (end - start) * eased);
+        el.innerHTML = (val >= 10000 ? val.toLocaleString('en-US') : val) + '<span>' + suffix + '</span>';
+        if(p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ runCount(); io.disconnect(); }
+      });
+    }, {threshold:.3});
+    var heroStats = document.querySelector('.jdmv-hero-stats');
+    if(heroStats){ io.observe(heroStats); }
+  }else{
+    runCount();
+  }
+})();
+</script>
+</body>
+                                                                                    </html>
